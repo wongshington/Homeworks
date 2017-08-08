@@ -1,0 +1,22 @@
+class Code
+  attr_reader :pegs
+  PEGS = {
+    
+  }
+
+  Code.random
+
+  def initialize(pegs= [])
+    @pegs = pegs
+  end
+
+  def [](pegs)
+
+  end
+
+end
+
+class Game
+  attr_reader :secret_code
+
+end
