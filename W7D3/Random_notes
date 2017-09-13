@@ -1,0 +1,43 @@
+Overview of components hierarchy
+  Root
+    -responsible for connecting component tree with the store
+    -renders giphysSearchContainer
+  GiphysSearchContainer
+    -container for GiphysSearch component
+    GiphysSearch
+      -renders search bar and handles all search logic
+        -keeping track of quert abd trigger AJAx request on submit
+      -renders Giphys Index
+      GiphysIndex
+        -iterates over giphys in props
+          -renders a giphysIndexItem for each
+       GiphysIndexItem
+
+State Shape
+  -because we want to display giphy results returned by AJAX
+    -will need a slice of state that holds collection of giphy obs
+      -> giphys: []
+Reducers receive state and action as arguments
+  -which as we know from just above, will be an array
+RootReducer with Redux's combineReducers function
+  -assigns control of different slices of state to respective reducers to create application state
+????Will 'DOMContentLoaded' be provided on the assessment?
+Each change in the app's state should come from action creator
+Container components subscribe to the store, read state, and pass props while presentational components render the user interface.
+
+how can we tell what is a presentational component vs container outside of it being labeled as container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
